@@ -1,0 +1,65 @@
+:root {
+    --background-color: rgb(6,11,24);
+    --border-color: rgb(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, a, p, span {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+nav > .nav-section {
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+    text-justify: center;
+}
+
+#nav-logo-section {
+    flex-basis: calc(100%/3);
+    justify-content: start;
+}
+
+#logo {
+    font-size: 40px;
+    padding-left: 1rem;
+}
+#nav-link-section {
+    flex-basis: 50%;
+    gap: 6rem; 
+}
+#nav-social-section {
+    gap: 3rem;
+}
+#nav-contact-section {
+    flex-basis: 20%;
+}
+
+  
