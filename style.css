@@ -19,6 +19,7 @@ h1, h2, h3, a, p, span {
     font-family: 'Philosopher', sans-serif;
     font-weight: 400;
     color: white;
+    margin: 0px;
 }
 
 a {
@@ -48,7 +49,7 @@ nav > .nav-section {
 }
 
 #logo {
-    font-size: 40px;
+    font-size: 2.5rem;
     padding-left: 1rem;
 }
 #nav-link-section {
@@ -61,5 +62,68 @@ nav > .nav-section {
 #nav-contact-section {
     flex-basis: 20%;
 }
+main {
+    flex-grow: 1;
+}
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+main > article > .article-section {
+    height: 100%;
+}
 
-  
+main > article > .article-nav-section, 
+main > article > .article-description-section {
+    border-left: 1px solid var(--border-color);
+}
+
+main > article > .article-title-section, 
+main > article > .article-nav-section {
+    border-top: 1px solid var(--border-color);
+}
+
+main > article:nth-child(1) > .article-image-section {
+    background-image: url("./images/Amber-Bracken.jpeg");
+}
+
+main > article > .article-image-section {
+    background-position: center;
+    background-size: cover;
+}
+
+main > article > .article-description-section {
+    display: flex;
+    align-items: flex-end;
+    padding: 0rem 5rem 4rem 5rem;
+}
+main > article > .article-description-section > p {
+    line-height: 160%;
+}
+
+main > article > .article-title-section {
+    display: flex;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+main > article > .article-title-section > h1 {
+    font-size: 4rem;
+    width: 60%;
+}
+
+main > article > .article-title-section > div {
+    margin-left: 60px;
+}
+
+main > article > .article-title-section > div > .label {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+main > article > .article-title-section > div > p {
+    font-size: 2rem;
+    padding: 0.8rem 0;
+}
